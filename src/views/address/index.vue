@@ -123,7 +123,7 @@ export default {
       try {
         const res = await getAddressList()
         this.list = res.data.list || []
-        console.log('地址列表:', this.list)
+        console.log('地址列表为:', this.list)
       } catch (error) {
         Toast.fail('加载地址失败')
       }
